@@ -11,6 +11,8 @@ jobs:
       image: devkitpro/devkitarm:latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install 3DS libraries
+        run: dkp-pacman -Sy --noconfirm 3ds-dev 3ds-citro2d
       - run: make
       - uses: actions/upload-artifact@v4
         with:
