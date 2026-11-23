@@ -1,5 +1,5 @@
-#include <citro2d.h>
 #include <3ds.h>
+#include <citro2d.h>
 
 #define SCREEN_W 400
 #define SCREEN_H 240
